@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介ページ</title>
+</head>
+<body>
+
+    <!-- ① 名前（h1タグ） -->
+    <h1>Vegul</h1>
+
+    <!-- ② ひとこと自己紹介（pタグ） -->
+    <p>ゲームと猫が好きな大学生です。</p>
+
+    <!-- ③ 画像の表示（imgタグ） -->
+    <img src="cat.jpg" alt="猫の写真" width="300">
+
+    <!-- ④ 好きなもの・趣味（h2 + 箇条書き ul/liタグ） -->
+    <h2>好きなもの</h2>
+    <ul>
+        <li>睡眠</li>
+        <li>ゲーム</li>
+        <li>自転車</li>
+    </ul>
+
+    <!-- ⑤ 順番に意味があるもの（h2 + 番号付きリスト ol/liタグ） -->
+    <h2>休日での過ごし方</h2>
+    <ol>
+        <li>ゲームを友達とする</li>
+        <li>課題や勉強に取り組む</li>
+        <li>猫と遊ぶ</li>
+    </ol>
+
+    <!-- ⑥ Webページへのリンク（aタグ） -->
+    <h2>おすすめのページ</h2>
+    <p><a href="https://www.youtube.com/">Youtube</a></p>
+
+<h2>趣味の紹介</h2>
+<table border="1">
+  <tr><th>好きなこと</th><th>楽しみ方</th></tr>
+  <tr><td>ゲーム</td><td>友達と遊ぶ</td></tr>
+  <tr><td>自転車</td><td>気分転換に乗る</td></tr>
+</table>
+<h2>ひとことフォーム（練習用）</h2>
+<p>入力の練習用です。送信はされません。</p>
+<form onsubmit="event.preventDefault()">
+  <p><label>ニックネーム：<input type="text" name="nickname"></label></p>
+  <p><label>好きなもの：<select name="hobby"><option>ゲーム</option><option>猫</option><option>自転車</option></select></label></p>
+  <p><label>ひとこと：<textarea name="message"></textarea></label></p>
+  <button type="reset">入力を消す</button>
+</form>
+</body>
+</html>
