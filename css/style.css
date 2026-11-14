@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     color: #333333;
-    margin: 24px;
+    margin: 0;
     line-height: 1.6;
 }
 
@@ -11,6 +11,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 32px;
     font-size: 24px;
     border-bottom: 1px solid #226699;
     padding-bottom: 4px;
@@ -31,4 +32,60 @@ th, td {
 .favorite-game {
     color: #cc3300;
     font-weight: bold;
+}
+
+header, footer {
+    background-color: #e6f1f8;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border-radius: 999px;
+    color: #333333;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus-visible {
+    background-color: #c9e2f3;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px 32px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 }
