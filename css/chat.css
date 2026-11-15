@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 24px 12px;
+    background: #edf2f0;
+    color: #263b34;
+    font-family: sans-serif;
+}
+.chat {
+    max-width: 560px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #c4d5cd;
+    border-radius: 16px;
+    background: #fff;
+}
+header {
+    padding: 18px;
+    background: #356750;
+    color: white;
+}
+h1 {
+    margin: 0;
+    font-size: 22px;
+}
+header p {
+    margin: 6px 0 0;
+    font-size: 13px;
+}
+.messages {
+    padding: 20px 14px;
+    background: #e1eee7;
+}
+.row {
+    display: flex;
+    margin-bottom: 14px;
+}
+.mine {
+    justify-content: flex-end;
+}
+.bubble {
+    padding: 10px 14px;
+    max-width: 75%;
+    margin: 0;
+    border-radius: 16px;
+    background: white;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+.mine .bubble {
+    background: #b8e5b2;
+}
+.composer {
+    display: flex;
+    gap: 8px;
+    padding: 14px;
+}
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #bdcbc3;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #356750;
+    color: white;
+    font-size: 16px;
+}
+@media (max-width: 400px) {
+    body {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
